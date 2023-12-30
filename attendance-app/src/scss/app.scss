@@ -1,0 +1,61 @@
+@use './base.scss';
+
+#root {
+    // background: var(--primary-color);
+}
+
+.main {
+    // height: 100svh;
+    max-width: 26.875rem;
+    height: 100svh;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    // background: linear-gradient(180deg, #020202 0%, rgba(8, 2, 19, 0.00) 100%);
+
+    .icon__container {
+        img {
+            width: 200px;
+            height: 200px;
+            flex-shrink: 0;
+        }
+    }
+
+    form {
+        width: 80%;
+        color: var(--white-color);
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+        .form-outline {
+            .form-control {
+                background-color: var(--white-color);
+
+                // &:focus~.form-label {
+                //     color: var(--white-color);
+                //     font-size: 1.3em;
+                //     top: -13px;
+                // }
+            }
+        }
+
+        button {
+            border-radius: 0.5rem;
+            border: 1px solid var(--white-color);
+            background: var(--primary-color);
+
+            &:hover {
+                background-color: var(--white-color);
+                color: var(--primary-color)
+            }
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
